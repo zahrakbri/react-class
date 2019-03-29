@@ -40,3 +40,10 @@
 ## HTML Block and Inline Elements
 - Block-level Elements
 - Inline Elements
+
+## Useful linkes
+- [HTML5 Tutorial](https://www.w3schools.com/html/default.asp)
+- [GitHub Guides](https://guides.github.com/activities/hello-world/)
+
+## practices
+- create your own repository
