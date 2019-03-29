@@ -36,3 +36,7 @@
 - href
 - width
 - height
+
+## HTML Block and Inline Elements
+- Block-level Elements
+- Inline Elements
