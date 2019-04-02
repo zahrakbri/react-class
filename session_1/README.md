@@ -53,7 +53,7 @@
 - [HTML5 Tutorial](https://www.w3schools.com/html/default.asp)
 - [GitHub Guides](https://guides.github.com/activities/hello-world/)
 
-## Exersises
+## Exercises
 
 ### Ex. 1.1
 
