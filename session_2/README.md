@@ -39,7 +39,7 @@
 
 Design the [aparat login page](https://www.aparat.com/authentication)
 
-**Acceptance Ceritera:**
+**Acceptance Criteria:**
 * As similar as possible
 * Submit your homework based on [Submit Homework Guideline Document](https://github.com/zahrakbri/react-class#submit-homeworks-guideline)
 
