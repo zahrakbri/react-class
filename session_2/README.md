@@ -33,7 +33,7 @@
 ## Exercises
 
 
-### Ex. 1.1
+### Ex. 2.1
 
 **Problem Def.**
 
