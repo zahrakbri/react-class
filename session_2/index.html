@@ -1,22 +1,55 @@
 <html>
   <head>
     <style>
+      a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: #4a90e2;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .password {
+        border: 1px solid #dfe3e9;
+        border-radius: 4px;
+        display: block;
+        margin-bottom: 15px;
+        padding: 9px 15px;
+        width: 100%;
+      }
+      .div1 {
+        padding: 30px;
+      }
       .title {
         border-width: 0 0 1px 0;
         border-style: solid;
         border-color: #dfe3e9;
+        padding: 30px 30px 15px 30px;
       }
       .container {
         background-color: #fff;
+        width: 40%;
+        margin: auto;
       }
       #p1 {
         color: #000;
+        font-weight: bold;
+        text-align: center
       }
       button {
-        background-color: #249533;
+        background-image: linear-gradient(#39b54a, #34aa44);
+        display: block;
+        width: 100%;
+        border: 1px solid #249533;
+        border-radius: 4px;
+        color: #fff;
+        padding: 9px 0;
+        margin-bottom: 30px;
+        font-size: 14px;
       }
       .description {
         color: #4a4a4a;
+        text-align: center;
       }
       .test {
         width: 30px;
@@ -40,20 +73,23 @@
         </p>
       </div>
 
-      <div>
-        <input>
+      <div class="div1">
+        <input
+          class="password"
+          placeholder="Email"
+          >
         </input>
         <button>
           Submit
         </button>
-        <a>
+        <a
+          target="_blank"
+          href="https://google.com"
+        >
           Return to Login Screen
         </a>
       </div>
     </div>
 
-    <span class="test">
-    hh
-    </span>
   </body>
 </html>
