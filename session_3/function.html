@@ -6,13 +6,54 @@
 
   <p>This example calls a function which performs a calculation, and returns the result:</p>
 
+  <p id="demo6"></p>
   <p id="demo"></p>
-
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
   <script>
-    function myFunction(p1, p2) {
-      return p1 * p2;
+    var test = "test"
+    function sum(a, b) {
+      var result = a + b;
+      return result
+      
     }
-    document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+    function greeting(name) {
+      var welcome = "Hello";
+      return "Hello " + name
+    }
+
+    function letter(word) {
+      return word[1]
+    }
+
+    function index(statement, word) {
+      //statement.indexOf(word)
+      return statement.lastIndexOf(word)
+    }
+    function Title(name)  {
+      return name[0].toUpperCase() + name.slice(1);
+
+    }
+    var str = "Hello "
+    var status = "pending"
+    var name = "zahra"
+    document.getElementById("demo").innerHTML = index('hello zahra hello !', 'hello')
+    document.getElementById("demo2").innerHTML = status.toLowerCase();
+    document.getElementById("demo3").innerHTML = Title("helia")
+
+    function greeting2(name) {
+      var welcome = "Hello";
+      return welcome.concat(' ', name, "!")
+    }
+    document.getElementById("demo4").innerHTML = greeting2("helia")
+    var num = 20;
+    document.getElementById("demo5").innerHTML = Number("10") + num.toString() + 30;
+
+    var username = "    zahrakbri   "
+    document.getElementById("demo6").innerHTML = username.trim()
   </script>
 
   </body>
