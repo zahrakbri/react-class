@@ -3,9 +3,9 @@
 * Familiar with React
 
 ## Topics
-  * installing Nodejs
+  * Installing Nodejs
   * npm
-  * create react app
+  * Create react app
   * jsx
   * Main concepts
 
