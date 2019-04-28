@@ -6,7 +6,6 @@
   * Components and props
   * State and Lifecycle
   * Handling Events
-  * Conditional Rendering
   * Forms
   * Lifting State Up
 
