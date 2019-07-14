@@ -1,8 +1,40 @@
 # Session 2 - Introduction to Web Development
 ## Goals
+* Familiar with HTML
 * Familiar with CSS
 * Familiar with Responsive Web Design
 ## Topics
+
+* HTML Tags
+  * Review of useful HTML tags:
+     * `<html>`
+     * `<head>`
+     * `<title>`
+     * `<body>`
+     * `<p>`
+     * `<div>`
+     * `<span>`
+     * `<img>`
+     * `<form>`
+     * `<input>`
+     * `<textarea>`
+     * `<select>`
+     * `<button>`
+     * `<table>`
+     * `<ol>`
+     * `<ul>`
+     * `<hr>`
+     * `<br>`
+  * HTML Attributes
+    * style
+    * src
+    * href
+    * width
+    * height
+
+* HTML Block and Inline Elements
+  * Block-level Elements
+  * Inline Elements
 
 * CSS Tutorial
   * syntax
