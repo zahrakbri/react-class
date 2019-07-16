@@ -3,7 +3,6 @@
 ## Goals
 
 * Familiar with Version Control Softwares and Git
-* Familiar with HTML
 
 ## Topics
 
@@ -17,18 +16,8 @@
     * `git commit`
     * `git push`
 
-* HTML Tags
-  * Review of useful HTML tags:
-     * `<html>`
-     * `<head>`
-     * `<title>`
-     * `<body>`
-     * `<p>`
-     * `<span>`
-
 ## Useful links
 - [Class Source Code](https://github.com/zahrakbri/react-class/blob/Session-1/)
-- [HTML5 Tutorial](https://www.w3schools.com/html/default.asp)
 - [GitHub Guides](https://guides.github.com/activities/hello-world/)
 - [download](https://git-scm.com/download/win) git and install
 
@@ -46,7 +35,3 @@ Create your own repository.
 * Create a file and push it on the repository
 * Submit your homework based on [Submit Homework Guideline Document](https://github.com/zahrakbri/react-class#submit-homeworks-guideline)
   * Submit the link of your reposity
-
-**Nice to Do:**
-* Start [this project](https://github.com/zahrakbri/react-class) :)
-

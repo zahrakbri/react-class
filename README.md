@@ -14,10 +14,10 @@
 
 |#Session| Topics                           | Links |
 |:-----:|----------------------------------|------|
-| 1 | Introduction to Web Development  | [Link](https://github.com/zahrakbri/react-class/blob/Session-1/) |
-| 2 |        | |
-| 3 |        | |
-| 4 |        | |
+| 1 | Introduction to Web Development and Git  | [Link](https://github.com/zahrakbri/react-class/blob/Session-1/) |
+| 2 | Introduction to HTML | [Link](https://github.com/zahrakbri/react-class/blob/Session-2/) |
+| 3 | Introduction to CSS | [Link](https://github.com/zahrakbri/react-class/blob/Session-3/) |
+| 4 | Introduction to Flexbox | [Link](https://github.com/zahrakbri/react-class/blob/Session-3/) |
 
 ## Submit Homeworks Guideline
 
@@ -29,5 +29,6 @@
 
 ## Questions/Froum
 
-* If you have any question/issue, feel free to send an email to [zahra.kabiri.1993 at Gmail](mailto:zahra.kabiri.1993@gmail.com)
+* telegram: @UTech_Course_Support
+* If you have any question/issue, feel free to send a email to zahrakabiri@utech-academy.ir
 * You can join to [this course telegram channel](https://t.me/reactcourse) to follow course announcements and materials

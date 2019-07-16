@@ -1,18 +1,30 @@
-# Session 5 - Introduction to RactJs
+# Session 5 - Introduction to Javascript
+
 ## Goals
-* Familiar with React
+
+* Familiar with JS
 
 ## Topics
-  * Installing Nodejs
-  * npm
-  * Create react app
-  * jsx
-  * Main concepts
+
+* JS Tutorial
+  * JavaScript Introduction
+  * The `<script>` Tag
+  * Syntax
+  * Comments
+  * Variables
+  * Operators
+  * Assignment
+  * Data Types
+  * Functions
+  * Events
+  * Objects
+  * Strings
+  * String Methods
+  * Numbers
+  * Number Methods
+  * Date
 
 
 ## Useful linkes
 - [Class Source Code](https://github.com/zahrakbri/react-class/blob/Session-5/)
-- [ًReact docs](https://reactjs.org/docs/getting-started.html)
-- [node js](https://nodejs.org/en/)
-- [create react app](https://reactjs.org/docs/create-a-new-react-app.html)
-
+- [Javascript Tutorial](https://www.w3schools.com/js/default.asp)
