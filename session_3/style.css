@@ -1,0 +1,95 @@
+#p1 {
+  color: rgb(255,0,0);
+  background-color: aqua
+}
+.p2 {
+  color: #bbb;
+}
+h1, h2 {
+  color: yellow;
+  border-style: solid;
+  border-color: #ab4191;
+  border-width: 1px;
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 17px;
+  margin: 10px auto;
+  width: 140px;
+  padding: 1px 8px 20px;
+  border-color: red blue yellow;
+  font-size: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: linear-gradient(to right, #00fa11 , #18b11e);
+  color: #fff;
+  margin: 25px;
+  border-radius: 4px;
+  letter-spacing: 14px;
+  text-decoration: none;
+  direction: rtl;
+  font-size: 21px;
+  font-size: 4em;
+  font-size: 10vw;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+/* body {
+  background-image: url("cat.jpg")
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.input {
+  position: relative;
+}
+
+.input input {
+  padding: 5px 10px 5px 30px;
+}
+
+.icon-container {
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  border-right: 1px solid;
+}
+
+.icon-container i {
+  font-size: 10px !important
+}
+
+.input>p {
+  color: red;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #ab4191
+}
+
+.input div:first-child {
+  border: 1px solid #2dcc2d
+}
+
+.chat {
+  height: 100px;
+  background-color: #00fa11
+}
+.conversation-list {
+  width: 30%;
+  height: 100px;
+  display: inline-block;
+  background-color: #ab4191
+}
+.chat-screen {
+  width: 68%;
+  height: 100px;
+  display: inline-block;
+  background-color: #bbb;
+}
