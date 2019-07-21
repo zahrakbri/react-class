@@ -4,7 +4,6 @@
 
 * Familiar with CSS
 * Familiar with Responsive Web Design
-* Familiar with JS
 
 ## Topics
 
@@ -25,6 +24,7 @@
   * Pseudo-classes
   * Opacity
   * Gradients
+  * shadow
 
 ## Useful linkes
 - [CSS Tutorial](https://www.w3schools.com/css/default.asp)
