@@ -17,7 +17,7 @@
 | 1 | Introduction to Web Development and Git  | [Link](https://github.com/zahrakbri/react-class/blob/Session-1/) |
 | 2 | Introduction to HTML | [Link](https://github.com/zahrakbri/react-class/blob/Session-2/) |
 | 3 | Introduction to CSS | [Link](https://github.com/zahrakbri/react-class/blob/Session-3/) |
-| 4 | Introduction to Flexbox | [Link](https://github.com/zahrakbri/react-class/blob/Session-3/) |
+| 4 | Introduction to Flexbox | [Link](https://github.com/zahrakbri/react-class/blob/Session-4/) |
 
 ## Submit Homeworks Guideline
 

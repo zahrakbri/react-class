@@ -8,30 +8,20 @@
 
 ## Topics
 
-* CSS Tutorial
-  * syntax
-  * How to insert a style sheet
-  * Colors
-  * Backgrounds
-  * Borders
-  * Margin and padding
-  * Height and Width
-  * Text
-  * Icons
-  * display
-  * position
-  * Overflow
-  * float
-  * Pseudo-classes
-  * Opacity
-  * Gradients
 * Responsive Web Design
   * `max-width`
   * Media Queries
 
-
+* Flexbox
+  * `display: flex`
+  * `flex-direction`
+  * `justify-content`
+  * `align-items`
+  * `flex-grow`
+  * `align-self`
 
 ## Useful linkes
 - [CSS Tutorial](https://www.w3schools.com/css/default.asp)
 - [Class Source Code](https://github.com/zahrakbri/react-class/blob/Session-4/)
-- [Javascript Tutorial](https://www.w3schools.com/js/default.asp)
+- [Media Query Tutorial](https://www.w3schools.com/css/css3_mediaqueries.asp)
+- [Flexbox Tutorial](https://www.w3schools.com/css/css3_flexbox.asp)
