@@ -1,0 +1,21 @@
+.login {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20px;
+  height: 70vh;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #c8a7ce;
+}
+
+.login img:first-child {
+  align-self: center;
+  width: 50px;
+}
