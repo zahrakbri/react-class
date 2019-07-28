@@ -5,10 +5,11 @@
     <h2>JavaScript</h2>
     <input id='name1' type='text'>
     <input id='name2' type='text'>
-    <button onclick='myEvent()' >click me</button>
-    <p id="demo"> this is </p>
+    <button onclick='round()' >click me</button>
+    <p id="demo"> 0 </p>
 
     <script>
+      var count = 0
       function myEvent() {
         //document.getElementById('demo').innerHTML='you clicked'
         var num1 = document.getElementById('name1').value;
@@ -16,6 +17,18 @@
         document.getElementById('demo').innerHTML=Number(num1) + Number(num2)
 
       }
+      function setCount(){
+        count+=1
+        document.getElementById('demo').innerHTML=count
+      }
+
+      function round() {
+        var num1 = document.getElementById('name1').value;
+        document.getElementById('demo').innerHTML=Number(num1).toFixed(2)
+        document.getElementById('demo').innerHTML=parseInt(num1)
+      }
+      var date = new Date
+      document.getElementById('demo').innerHTML = date.getTime()
     </script>
   </body>
 </html>
