@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    
+  </head>
   <body>
 
     <h2>JavaScript</h2>
@@ -7,9 +10,29 @@
     <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
 
     <p id="demo">this is a p</p>
-
     <script>
-    </script>
+      document.getElementById("demo").innerHTML='Hello Js'
+      console.log('hello console!!')
 
+      var x = 2
+      x = 3
+      var y = 4
+      var z = x - y
+      x += y // x = x + y
+      x -= y // x = x - y
+      x *= y // x = x * y
+      x /= y // x = x / y
+      z = (20 + 10) / 2 
+      
+      document.getElementById("demo").innerHTML=z
+
+      function sum(n1, n2) {
+        var res = n1 + n2
+        return res
+      }
+
+      var result = sum(5, 6)
+      console.log('result: ', result, res)
+    </script>
   </body>
 </html>
