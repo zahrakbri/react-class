@@ -18,6 +18,8 @@
 | 2 | Introduction to HTML | [Link](https://github.com/zahrakbri/react-class/blob/Session-2/) |
 | 3 | Introduction to CSS | [Link](https://github.com/zahrakbri/react-class/blob/Session-3/) |
 | 4 | Introduction to Flexbox | [Link](https://github.com/zahrakbri/react-class/blob/Session-4/) |
+| 5 | Introduction to JS | [Link](https://github.com/zahrakbri/react-class/blob/Session-5/) |
+| 6 | Introduction to JS | [Link](https://github.com/zahrakbri/react-class/blob/Session-6/) |
 
 ## Submit Homeworks Guideline
 
@@ -30,5 +32,5 @@
 ## Questions/Froum
 
 * telegram: @UTech_Course_Support
-* If you have any question/issue, feel free to send a email to zahrakabiri@utech-academy.ir
+* If you have any question/issue, feel free to send an email to zahrakabiri@utech-academy.ir
 * You can join to [this course telegram channel](https://t.me/reactcourse) to follow course announcements and materials
