@@ -3,10 +3,19 @@
   <body>
 
     <h2>JavaScript</h2>
-    <button onclick ="" >click me</button>
+    <input id='name1' type='text'>
+    <input id='name2' type='text'>
+    <button onclick='myEvent()' >click me</button>
     <p id="demo"> this is </p>
 
     <script>
+      function myEvent() {
+        //document.getElementById('demo').innerHTML='you clicked'
+        var num1 = document.getElementById('name1').value;
+        var num2 = document.getElementById('name2').value;
+        document.getElementById('demo').innerHTML=Number(num1) + Number(num2)
+
+      }
     </script>
   </body>
 </html>
