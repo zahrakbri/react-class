@@ -3,10 +3,103 @@
   <body>
 
     <h2>JavaScript</h2>
-    <button onclick = '' > click me </button>
-    <p id="demo"> </p>
+    <button onclick = 'pushItem()' > click me </button>
+    <span id="demo"> </span>
+    <span id='date'> </span>
+    <input id='str'>
 
     <script>
+      function fullName() {
+        return conversation.name + ' ' +  conversation.lastName
+      }
+      var conversation = [
+        {
+          'name': 'zahra',
+          lastName: 'kabiri',
+          profileUrl: 'http://...',
+          'email': 'z@k.com',
+          'latest-message': 'salam',
+          date: new Date(),
+          unseenMessage: 4,
+          messages: ['hhh', 'fghbjn'],
+          fullName: function() {
+            console.log('this::', this)
+            // return JSON.stringify(this)
+            return this.name + ' ' +  this.lastName
+          }
+        },
+        {
+          'name': 'Aida',
+          lastName: 'Rezakhani',
+          profileUrl: 'http://...',
+          'email': 'z@k.com',
+          'latest-message': 'hiii',
+          date: new Date(),
+          unseenMessage: 4,
+          messages: ['hhh', 'fghbjn'],
+          fullName: function() {
+            console.log('this::', this)
+            // return JSON.stringify(this)
+            return this.name + ' ' +  this.lastName
+          }
+        },
+        {
+          'name': 'Ali',
+          lastName: 'Rezakhani',
+          profileUrl: 'http://...',
+          'email': 'z@k.com',
+          'latest-message': 'hiii',
+          date: new Date(),
+          unseenMessage: 4,
+          messages: ['hhh', 'fghbjn'],
+          fullName: function() {
+            console.log('this::', this)
+            // return JSON.stringify(this)
+            return this.name + ' ' +  this.lastName
+          }
+        }
+      ]
+
+
+      document.getElementById('demo').innerHTML= conversation[1].fullName()
+      document.getElementById('date').innerHTML= conversation['latest-message']
+
+      var student = ['aida', 'farimah', 'deleram']
+      document.getElementById('demo').innerHTML = student[1]
+
+      student[3] = 'elahe'
+      console.log('student::', student)
+      // x = student.push('hadi')
+      student.push('hadi')
+      console.log('student::', student)
+      console.log('length::', student.length)
+      var arr = []
+      function pushItem() {
+        var myString = document.getElementById('str').value
+        arr.push(myString)
+        console.log('arr::', arr)
+      }
+
+      // var x = student.pop()
+      student.pop()
+      console.log('student::', student)
+
+      student.shift()
+      console.log('student::', student)
+
+      student.unshift('Mohammad')
+      console.log('student::', student)
+
+      delete student[1]
+      console.log('student::', student)
+
+      console.log('conversation::', conversation)
+      conversation.splice(1, 0, {'name': 'x'})
+      console.log('conversation::', conversation)
+
+      var newStudent = ['Sina']
+      // student = newStudent.concat(student)
+      // console.log('student::', student)
 
     </script>
   </body>
