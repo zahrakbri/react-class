@@ -7,7 +7,6 @@
 * JS Tutorial
   * Arrays
   * Array Methods
-  * Date
   * Booleans
   * Comparison
   * Conditional Statements

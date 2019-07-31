@@ -3,48 +3,12 @@
   <body>
 
     <h2>JavaScript </h2>
-    <button> click me 1 </button>
+    <button> click me</button>
     
     <div id="demo"></div>
 
     <script>
-      var conversationList = [
-          {
-            firstName: "zahra",
-            lastName: "kabiri",
-            profile: "url1",
-            date: '2/10',
-            latestMessage: 'salam',
-            unseenMessages: 10,
-            name: function() {
-              var fullName = this.firstName + ' ' + this.lastName;
-              console.log('this::::',this)
-              console.log('fullName::::',fullName)
-              return fullName
-            }
-          },{
-            firstName : "hassan",
-            profile: "url2",
-            date: '2/10',
-            latestMessage: 'salam'
-          },{
-            firstName : "hosein",
-            profile: "url3",
-            date: '2/10',
-            latestMessage: 'salam'
-          },{
-            firstName : "ali",
-            profile: "url4",
-            date: '2/10',
-            latestMessage: 'salam'
-          }
-        ];
-      var content = '';
-
-      for(var i = 0; i < conversationList.length ; i++ ) {
-        content += '<div style = "border: 1px solid #000"><p>' + conversationList[i].firstName + '</p><p>' + conversationList[i].latestMessage + '</p></div>';
-      }
-      document.getElementById('demo').innerHTML = content
+      
     </script>
 
   </body>

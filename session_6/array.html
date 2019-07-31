@@ -3,98 +3,11 @@
   <body>
 
     <h2>JavaScript</h2>
-    <button onclick = spliceItem() > click me </button>
+    <button onclick = '' > click me </button>
     <p id="demo"> </p>
 
     <script>
-      var cars = ["BMW", "Volvo", "Benz"]
-      // cars[0] = "pride"
-      document.getElementById("demo").innerHTML = Array.isArray(cars)
 
-      function getLen() {
-        document.getElementById("demo").innerHTML = cars.length
-      }
-
-      function pushItem() {
-        console.log('step1:::::::',cars)
-        var x = cars.push("pride")
-        console.log('step2:::::',x)
-        document.getElementById("demo").innerHTML = cars
-      }
-      
-      function popItem() {
-        console.log('step1:::::::',cars)
-        var x = cars.pop()
-        console.log('step2:::::',x)
-        document.getElementById("demo").innerHTML = cars
-      }
-
-      function shiftItem() {
-        console.log('step1:::::::',cars)
-        var x = cars.shift()
-        console.log('step2:::::::',x)
-        document.getElementById("demo").innerHTML = cars
-      }
-
-      function unshiftItem() {
-        console.log('step1:::::::',cars)
-        var x = cars.unshift("peogute")
-        console.log('step2:::::::',x)
-        document.getElementById("demo").innerHTML = cars
-      }
-
-      function deleteItem() {
-        console.log('step1:::::::',cars)
-        delete cars[1]
-        console.log('step2:::::::',cars)
-        document.getElementById("demo").innerHTML = cars
-      }
-
-      
-
-      function spliceItem() {
-        var conversationList = [
-          {
-            firstName: "zahra",
-            lastName: "kabiri",
-            profile: "url1",
-            date: '2/10',
-            latestMessage: 'salam',
-            unseenMessages: 10,
-            name: function() {
-              var fullName = this.firstName + ' ' + this.lastName;
-              console.log('this::::',this)
-              console.log('fullName::::',fullName)
-              return fullName
-            }
-          },{
-            firstname : "hassan",
-            profile: "url2",
-            date: '2/10',
-            latestMessage: 'salam'
-          },{
-            name : "hosein",
-            profile: "url3",
-            date: '2/10',
-            latestMessage: 'salam'
-          },{
-            name : "ali",
-            profile: "url4",
-            date: '2/10',
-            latestMessage: 'salam'
-          }
-        ]
-
-        var newConversation = [{
-          name: "amir",
-          date: ''
-        }]
-        conversationList = newConversation.concat(conversationList)
-        console.log('step1::', conversationList)
-        //conversationList.splice(1,1)
-        console.log('step2::', conversationList[1].name())
-        document.getElementById("demo").innerHTML = conversationList[1].name()
-      }
     </script>
   </body>
 </html>
