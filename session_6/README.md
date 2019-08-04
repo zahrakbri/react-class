@@ -1,4 +1,4 @@
-# Session 4 - Introduction to Javascript (Cont.)
+# Session 6 - Introduction to Javascript (Cont.)
 ## Goals
 * Familiar with JS
 
@@ -11,11 +11,15 @@
   * Comparison
   * Conditional Statements
   * Loop
+  * Scope
+  * Let
+  * Const
+  * `this` Keyword
   * JSON
 
 
 ## Useful linkes
-- [Class Source Code](https://github.com/zahrakbri/react-class/blob/Session-4/)
+- [Class Source Code](https://github.com/zahrakbri/react-class/blob/Session-6/)
 - [Javascript Tutorial](https://www.w3schools.com/js/default.asp)
 
 ## Exercises
