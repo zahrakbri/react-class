@@ -3,7 +3,6 @@
 * Familiar with React
 
 ## Topics
-  * Components and props
   * State and Lifecycle
   * Handling Events
   * Forms

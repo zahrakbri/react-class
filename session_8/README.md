@@ -7,7 +7,7 @@
   * npm
   * Create react app
   * jsx
-  * Main concepts
+  * Components and props
 
 
 ## Useful linkes

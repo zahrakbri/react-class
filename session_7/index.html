@@ -3,10 +3,42 @@
   <body>
 
     <h2>JavaScript </h2>
-    <button onclick = '' > click me </button>
+    <button onclick = '() => {console.log("im here")}' > click me </button>
     <p id="demo"></p>
 
     <script>
+      var conversation = {
+        name: 'zahra',
+        lastName: 'kabiri',
+        fullName: function() {
+          console.log(this.name + ' ' + this.lastName)
+          return (this.name + ' ' + this.lastName)
+        }
+      }
+      conversation.fullName()
+      var arr = [1, 2, 3, 4]
+      arr.map(
+        (item, index) => {
+          if (index%2 === 0)
+          console.log(item)
+        }
+      )
+
+      class Car {
+        constructor(brand) {
+          this.carName = brand
+        }
+
+        present() {
+          return 'I have a ' + this.carName
+        }
+      }
+      var mycar = new Car('benz')
+      var car2 = new Car('saipa')
+      console.log('mycar::', mycar.present(), car2)
+
+      number = '123'
+      number[0]
     </script>
 
   </body>
