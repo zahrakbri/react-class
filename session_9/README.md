@@ -1,4 +1,4 @@
-# Session 6 - Introduction to RactJs
+# Session 6 - Introduction to ReactJs
 ## Goals
 * Familiar with React
 

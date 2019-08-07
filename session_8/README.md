@@ -1,9 +1,8 @@
-# Session 5 - Introduction to RactJs
+# Session 5 - Introduction to ReactJs
 ## Goals
 * Familiar with React
 
 ## Topics
-  * Installing Nodejs
   * npm
   * Create react app
   * jsx
