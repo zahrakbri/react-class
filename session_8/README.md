@@ -7,6 +7,7 @@
   * Create react app
   * jsx
   * Components and props
+  * standard js
 
 
 ## Useful linkes
