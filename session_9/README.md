@@ -1,4 +1,4 @@
-# Session 6 - Introduction to ReactJs
+# Session 9 - Introduction to ReactJs
 ## Goals
 * Familiar with React
 
