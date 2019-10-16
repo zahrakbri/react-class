@@ -1,0 +1,29 @@
+body {
+  background-color: #f7f7f7;
+}
+
+body h2 {
+  text-align: center
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 40px 90px;
+}
+
+.container h4 {
+  text-align: center
+}
+
+.button {
+  background-color: #0cd4a6;
+  color: #fff;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
