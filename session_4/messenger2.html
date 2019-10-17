@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      .conversation-list {
+        background-color: lightblue;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .chat-screen {
+        background-color: lightseagreen;
+        flex-grow: 3;
+      }
+      .conversation {
+        border-bottom: 1px solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 20vh;
+      }
+      .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-grow: 3;
+      }
+
+      .name div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .profile {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='conversation-list'>
+      <div class='conversation'>
+        <div class='profile'>img</div>
+        <div class='name'>
+          <div>
+            <span> zahra </span>
+            <span> 2/3 </span></div>
+          <div>
+            <span> salam </span>
+            <span> 3 </span>
+          </div>
+        </div>
+      </div>
+      <div class='conversation'>
+        <div class='profile'>img</div>
+        <div class='name'>
+          <div>
+            <span> hooman </span>
+            <span> 22/3 </span>
+          </div>
+          <div>
+            <span> salam !!!!! </span>
+            <span> 3 </span>
+          </div>
+        </div>
+      </div>
+      <div class='conversation'>
+        <div class='profile'>img</div>
+        <div class='name'>
+          <div>zahra</div>
+          <div>salam</div>
+        </div>
+      </div>
+    </div>
+    <div class='chat-screen'>
+      CHAT
+    </div>
+  </body>
+</html>

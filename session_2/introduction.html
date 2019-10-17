@@ -47,6 +47,7 @@
         height: 10vh;
         text-align: center;
         text-decoration: underline;
+        cursor: pointer;
       }
 
       a {
@@ -57,14 +58,55 @@
         color: #fff;
         border-radius: 3px;
       }
+      a:hover {
+        background-color: #1690a7;
+      }
       i {
         font-size: 30px;
         color: green;
+      }
+      .d1 {
+        background-color: #ccc;
+        margin: 10px;
+        width: 20%;
+        display: inline-block;
+      }
+      .d2 {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .d4 {
+        background-image: linear-gradient(to right, red , yellow);
+      }
+      .d4 p {
+        color: hotpink
+      }
+      .d4>p {
+        color: purple
+      }
+      .d4 p:first-child {
+        color: green
+      }
+      .d4 p:last-child {
+        color: lightgreen
       }
     </style>
     <meta charset="UTF-8">
   </head>
   <body>
+    <div class='d1 d2'> div 1 </div>
+    <div class='d4'>
+      <p>fgh </p>
+      <p>fgh </p>
+      <div>
+        <span>okjo </span>
+      </div>
+      <p>uhu </p>
+    </div>
+    <div class='d1'> div 3 </div>
+
     <i class="material-icons">person</i> sdfghjk
     <p title="this is test">It is a p <br /> HHHH </p>
     <p class='p1' style='color: yellow;'> I am <b>Zahra</b> </p>
