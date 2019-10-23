@@ -1,78 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <!-- <script src='' /> -->
+    <script>
+      function changeContent() {
+        document.getElementById("demo").innerHTML = 'salam!!!!'
+      }
+      function changeContent2(word, w2) {
+        document.getElementById("demo").innerHTML = word + ' ' + w2
+      }
+
+      function summ(p1, p2) {
+        var z = p1 + p2
+        return z
+      }
+    </script>
   </head>
   <body>
 
     <h2>JavaScript</h2>
-
-    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
-
     <p id="demo">this is a p</p>
+
     <script>
-      document.getElementById("demo").innerHTML='Hello Js'
-      console.log('hello console!!')
+      document.getElementById("demo").innerHTML = 'salam'
+      console.log('dfghjnkl')
 
       var x = 2
-      x = 3
-      var y = 4
-      var z = x - y
-      x += y // x = x + y
-      x -= y // x = x - y
-      x *= y // x = x * y
-      x /= y // x = x / y
-      z = (20 + 10) / 2 
-      
-      document.getElementById("demo").innerHTML=z
+      console.log(x)
+      document.getElementById("demo").innerHTML = x
 
-      function sum(n1, n2) {
-        var res = n1 + n2
-        return res
+      var y
+      y = 3
+      console.log(y)
+      x = 5
+      console.log(x)
+
+      var z = x + y
+      console.log(z)
+      z = y - x
+      console.log(z)
+      z = x * y
+      console.log(z)
+      console.log(x/y)
+      console.log(2**3)
+      console.log(x++)
+      console.log(++x)
+      console.log(y--)
+      console.log(--y)
+      console.log('z, x', z, x)
+      z += x //z = z + x
+      z -= x // z = z -x
+      z *= x // z = z * x
+      z /= x // z = z / x
+      console.log('z', z)
+
+      z = (10 + 2) * 3
+
+      var str = 'I am zahra'
+      document.getElementById("demo").innerHTML = str
+
+      var conversation = {
+        name: 'Arsham',
+        latestMessageDate: '23/10/2019',
+        latestMessage: 'Hi',
+        unseen: '2'
       }
 
-      var result = sum(5, 6)
-      console.log('result: ', result)
-
-
-      var name = 'zahra'
-      console.log('aaa', name[0])
-
-      function len(word) {
-        document.getElementById("demo").innerHTML= word.length
-      }
-      len('sdfghjnkm,')
-
-      function index(statement, word) {
-        document.getElementById("demo").innerHTML = statement.search(word)
-      }
-      index('hello world hello world', 'world')
-
-      var date = '1398/5/6Z17:50:125'
-      console.log('date', date.slice(0, 8))
-
-      var status = 'penDing'
-      console.log('status::', status.toUpperCase())
-      console.log('status::', status.toLowerCase())
-      var greeting = 'hello' + ' ' + 'zahra'
-      console.log(greeting)
-
-      var Namee = "amin"
-      document.getElementById("demo").innerHTML= Naming(Namee)
-
-      function Naming(Namee){
-        var FirstLetter = Namee[0]
-        var Others = Namee.slice(1)
-        var Final = FirstLetter.toUpperCase() +Others.toLowerCase()
-        return Final    
-      }
-
-      var state = 'Welcome Home'
-      console.log(state.replace('Home', 'School'))
-      console.log(state.concat(' ', Namee))
-      var email = '    zahra@gmail.com    '
-      email.trim()
+      changeContent()
+      changeContent2('Pooya', 'Hooman')
+      var result = summ(2,3)
+      document.getElementById("demo").innerHTML = result
 
     </script>
+
   </body>
 </html>

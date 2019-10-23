@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <body>
+  <head>
+    <!-- <script>
+      function change() {
+        document.getElementById("p1").innerHTML = 'helfghjklo'
+      }
+    </script> -->
+  </head>
+  <body onload='change()'>
 
     <h2>JavaScript</h2>
-    <input id='name1' type='text'>
-    <input id='name2' type='text'>
-    <button onclick='round()' >click me</button>
-    <p id="demo"> 0 </p>
+    <p id='p1' >ghj </p>
+    <button onclick='firstLetter("Hello js !")' >click me</button>
 
     <script>
-      var count = 0
-      function myEvent() {
-        //document.getElementById('demo').innerHTML='you clicked'
-        var num1 = document.getElementById('name1').value;
-        var num2 = document.getElementById('name2').value;
-        document.getElementById('demo').innerHTML=Number(num1) + Number(num2)
-
-      }
-      function setCount(){
-        count+=1
-        document.getElementById('demo').innerHTML=count
+      function greeting() {
+        var name = 'zahra'
+        document.getElementById("p1").innerHTML = 'hello' + ' ' + name
       }
 
-      function round() {
-        var num1 = document.getElementById('name1').value;
-        document.getElementById('demo').innerHTML=Number(num1).toFixed(2)
-        document.getElementById('demo').innerHTML=parseInt(num1)
+      function firstLetter(word) {
+        document.getElementById("p1").innerHTML = word[0]
+        console.log('111111',word.length)
+        console.log('222222',word.indexOf('js'))
       }
-      var date = new Date
-      document.getElementById('demo').innerHTML = date.getTime()
+
+      function index(s, w) {
+        console.log('3333',s.indexOf(w))
+        console.log('3333',s.lastIndexOf(w))
+      }
+
+      function transition (word) {
+        console.log('444',word.toUpperCase())
+        console.log('444',word.toLowerCase())
+      }
+
+      index('it is wednesday is', 'is')
+      transition('MohammadReza')
+
+      function sliceText (word) {
+        console.log('5555',word.slice(1))
+        console.log('444',word.slice(1, word.length - 2))
+      }
+      sliceText('it is rainy')
+
+      function cap(word){
+        var a=word[0].toUpperCase()
+
+        var b=word.slice(1)
+        console.log(a+b)
+      }
+      cap('ali')
+      var str = 'it is wednesday is'
+      var a = str.search('is')
+      console.log('####', a)
+
+      console.log(str.replace('wednesday', 'sunny'))
+      console.log(str.concat(' ', 'fhg', ' !'))
+
+      var email = '    zahra@hengam.io    '
+      console.log(email.trim())
+
+      var n1 = '10.333'
+      var n2 = '20'
+      console.log(n1 + n2)
+      console.log(n1 - n2)
+
+      var n3 = 30
+      var n4 = 40
+      console.log(n2 + n3 + n4)
+      console.log(n4 + n3 + Number(n1) + n4 + n3)
+
+      console.log(typeof n3.toString())
+      var n5 = 10.666666
+
+      console.log(n5.toFixed(3))
+      console.log(parseInt(n1),typeof n1, typeof parseInt(n1))
+      var date = new Date()
+      document.getElementById("p1").innerHTML = date
+      document.getElementById("p1").innerHTML = new Date(date.getTime())
     </script>
   </body>
 </html>
