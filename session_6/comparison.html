@@ -3,13 +3,70 @@
   <body>
 
     <h2>JavaScript </h2>
-    <button onclick = '' > click me 1 </button>
-    <input id='date' >
+    <button onclick = 'comparison3()' > click me 1 </button>
+    <input id='age' >
     <p id="demo"></p>
 
     <script>
+      function comparison () {
+        var age = Number(document.getElementById('age').value)
+        // if (age >= 18) {
+        //   document.getElementById('demo').innerHTML = 'you can vote'
+        //} else {
+        //  document.getElementById('demo').innerHTML = 'you are a child'
+        //}
+        age >= 18
+          ? document.getElementById('demo').innerHTML = 'you can vote'
+          : document.getElementById('demo').innerHTML = 'you are a child'
+        // age >= 18 ? true : false
+      }
 
+      function comparison2 () {
+        var date = new Date()
+        console.log(date.getHours())
+
+        if (date.getHours() < 12) {
+          document.getElementById('demo').innerHTML = 'Good morning'
+        } else if (date.getHours() < 18) {
+          document.getElementById('demo').innerHTML = 'Good evening'
+        } else {
+          document.getElementById('demo').innerHTML = 'Good night'
+        }
+      }
       
+      function comparison3 () {
+        var day = new Date().getDay()
+        console.log(day)
+        switch (day) {
+          case 0:
+            document.getElementById('demo').innerHTML = 'sunday'
+            console.log(0)
+            break
+          case 1:
+            document.getElementById('demo').innerHTML = 'monday'
+            console.log(1)
+            break
+          case 2:
+            document.getElementById('demo').innerHTML = '3shanbe'
+            console.log(2)
+            break
+          case 3:
+            document.getElementById('demo').innerHTML = '4shanbe'
+            console.log(3)
+            break
+          case 4:
+            document.getElementById('demo').innerHTML = '5shanbe'
+            console.log(4)
+            break
+          case 5:
+            document.getElementById('demo').innerHTML = 'jome'
+            console.log(5)
+            break
+          default:
+            document.getElementById('demo').innerHTML = 'fcgvhbnj'
+            console.log(6)
+        }
+      }
     </script>
 
   </body>

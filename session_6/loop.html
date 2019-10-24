@@ -3,13 +3,49 @@
   <body>
 
     <h2>JavaScript </h2>
-    <button onclick=''> click me</button>
+    <button onclick='loop3()'> click me</button>
     
     <div id="demo"></div>
     <input id='num' />
 
     <script>
-      
+      var h = 5
+      function loop () {
+        for (var i = 0; i <= 3; i++) {
+          console.log(i)
+        }
+      }
+
+      function loop2 () {
+        var arr = ['Rahele', 'Fateme', 'Shakib', 'MohammadReza']
+        var i
+        var len = arr.length
+        console.log('###', this)
+        for (i = 0; i < len; i++) {
+          console.log(arr[i])
+        }
+      }
+
+      function loop3 () {
+        var arr = ['Rahele', 'Fateme', 'Shakib', 'MohammadReza']
+        var content = ''
+        var i
+        var len = arr.length
+        for (i = 0; i < arr.length; i++) {
+          content += '<p style="color: blue">' + arr[i] + '</p>'  // x = x + y
+        }
+        document.getElementById('demo').innerHTML = content
+      }
+
+
+      {
+        const a = 10
+        {
+          let a = 15
+          console.log('!!!@@@', a)
+        }
+        console.log('@@@', a)
+      }
     </script>
 
   </body>
