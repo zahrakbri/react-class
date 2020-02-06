@@ -6,30 +6,11 @@
 
 * HTML Tags
   * Review of useful HTML tags:
-     * `<html>`
-     * `<head>`
-     * `<title>`
-     * `<body>`
-     * `<p>`
-     * `<div>`
-     * `<span>`
-     * `<img>`
      * `<form>`
      * `<input>`
      * `<textarea>`
      * `<select>`
      * `<button>`
-     * `<table>`
-     * `<ol>`
-     * `<ul>`
-     * `<hr>`
-     * `<br>`
-  * HTML Attributes
-    * style
-    * src
-    * href
-    * width
-    * height
 
 * HTML Block and Inline Elements
   * Block-level Elements

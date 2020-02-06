@@ -34,6 +34,10 @@
         }
       }
 
+      //function fullNameFunction() {
+        //code
+      //}
+
       console.log('11111', conversation.name,
         conversation['family'],
         conversation.unseen.sender
@@ -48,12 +52,19 @@
         {
           name: 'Pooya',
           family: 'Dehghan',
-          latestMessage: 'Hi'
+          latestMessage: 'Hi',
+          fullName: function() {
+            return this.name + this.family
+          }
         },
         {
           name: 'Mohammad',
           family: 'Davoodi',
-          latestMessage: 'Hi!'
+          latestMessage: 'Hi!',
+          fullName: () => {
+            console.log('###%%%%', this)
+            return conversationList[1].name + conversationList[1].family
+          }
         },
         {
           name: 'Fateme',
@@ -61,7 +72,7 @@
         }
       ]
 
-      console.log('##', conversationList, conversationList.length)
+      console.log('######', conversationList[0].fullName(), conversationList[1].fullName())
       function pushItem() {
         conversationList.push('3333')
         console.log(conversationList)
