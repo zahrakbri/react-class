@@ -1,7 +1,7 @@
 body {
   background-image: linear-gradient(to right ,#303030, #a6a6a6);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -29,6 +29,35 @@ body {
   justify-content: space-around;
 }
 
+.space-around div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .login-header {
   align-self: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: none;
+}
+
+.login {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 10px 0;
+  border: none;
+}
+
+.button-container button {
+  flex-grow: 1;
+}
+
+.m-h-10 {
+  margin: 0 10px;
 }
