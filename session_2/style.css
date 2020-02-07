@@ -1,0 +1,37 @@
+body {
+  background-color: #f7f7f7;
+  padding: 30px;
+  direction: rtl;
+}
+
+.container {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.container>div {
+  background-color: #75a0d8;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.help-box {
+  
+}
+
+.infograph {
+  background-color: #fff;
+  
+}
+
+.twin-box {
+
+}
