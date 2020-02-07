@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .space-around {
@@ -42,9 +43,11 @@ body {
 }
 
 input {
-  padding: 10px 25px;
+  padding: 10px 35px;
   border-radius: 2px;
   border: none;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .login {
@@ -60,4 +63,15 @@ input {
 
 .m-h-10 {
   margin: 0 10px;
+}
+
+i {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.relative {
+  position: relative;
+  display: flex;
 }
