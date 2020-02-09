@@ -7,8 +7,10 @@ body {
 .container {
   background-color: #fff;
   border: 1px solid #dedede;
+  height: calc(100vh - 8px - 30px - 30px - 8px - 2px - 40px);
   padding: 20px;
   border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container>div {
@@ -24,7 +26,8 @@ body {
 
 
 .help-box {
-  
+  flex-grow: 1;
+  background-color: aqua
 }
 
 .infograph {
@@ -35,3 +38,51 @@ body {
 .twin-box {
 
 }
+
+.overflow {
+  height: 100px;
+  overflow: auto;
+  background-color: pink;
+  /* opacity: 0.5; */
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+button:hover {
+  background-color: green;
+  color: #fff;
+}
+
+a:visited {
+  color: yellow;
+  background-color: red
+}
+
+a:active {
+  background-color: blue
+}
+
+a:link {
+  color: red;
+  background-color: yellow
+}
+
+.container:hover {
+  opacity: 0.5
+}
+
+input:focus  {
+  border-color: green
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    background-color: green
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background-color: black;
+  }
+}
+
