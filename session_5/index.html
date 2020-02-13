@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <script src='' /> -->
-    <script>
-      function changeContent() {
-        document.getElementById("demo").innerHTML = 'salam!!!!'
-      }
-      function changeContent2(word, w2) {
-        document.getElementById("demo").innerHTML = word + ' ' + w2
-      }
 
-      function summ(p1, p2) {
-        var z = p1 + p2
-        return z
-      }
-    </script>
   </head>
   <body>
 
     <h2>JavaScript</h2>
-    <p id="demo">this is a p</p>
-
+    <p id="demo" onclick='changeText()' >this is a p</p>
+    <p id="demo2" >...</p>
+    <input id='input1' onkeyup="replaceStr()" />
     <script>
-      document.getElementById("demo").innerHTML = 'salam'
-      console.log('dfghjnkl')
 
-      var x = 2
-      console.log(x)
-      document.getElementById("demo").innerHTML = x
-
-      var y
-      y = 3
-      console.log(y)
-      x = 5
-      console.log(x)
-
-      var z = x + y
-      console.log(z)
-      z = y - x
-      console.log(z)
-      z = x * y
-      console.log(z)
-      console.log(x/y)
-      console.log(2**3)
-      console.log(x++)
-      console.log(++x)
-      console.log(y--)
-      console.log(--y)
-      console.log('z, x', z, x)
-      z += x //z = z + x
-      z -= x // z = z -x
-      z *= x // z = z * x
-      z /= x // z = z / x
-      console.log('z', z)
-
-      z = (10 + 2) * 3
-
-      var str = 'I am zahra'
-      document.getElementById("demo").innerHTML = str
-
-      var conversation = {
-        name: 'Arsham',
-        latestMessageDate: '23/10/2019',
-        latestMessage: 'Hi',
-        unseen: '2'
+      function replaceStr() {
+        var str = document.getElementById('input1').value
+        document.getElementById('demo2').innerHTML = str.replace(str[0], str[0].toUpperCase())
       }
 
-      changeContent()
-      changeContent2('Pooya', 'Hooman')
-      var result = summ(2,3)
-      document.getElementById("demo").innerHTML = result
+      function sliceStr() {
+        var str = document.getElementById('input1').value
+        
+        document.getElementById('demo2').innerHTML = str.slice(1)
+      }
 
+
+      function getValue () {
+        var text = document.getElementById('input1').value
+        document.getElementById('demo').innerHTML = text
+      }
+      document.getElementById('demo').innerHTML = 'learn JS'
+      console.log('Hello!')
+
+      var x = 2
+      console.log('****', x )
+      x = 5
+      console.log('****', x )
+
+      var y
+      y = 6
+
+      var z = x + y
+      console.log('1111*', z )
+      var a = x - y
+      document.getElementById('demo').innerHTML = a
+      console.log('1111*', x * y )
+      console.log('1111*', x / y )
+      console.log('1111*', ++x )
+      console.log('1111*', y-- )
+      console.log('2222*', x**2 )
+
+      // x = x + 2
+      x += 2
+      // x = x - 3
+      x -= 3
+      x *= 2
+      x /= 2
+
+      a = (10 + 20) * 2 - 4
+      
+      var name = 'zahra'
+      console.log('type name', typeof name )
+      console.log('type x', typeof x )
+
+      var students = ['reyhane', 'arman', 'afsoon']
+      var message = {
+        sender: 'farnoosh',
+        text: 'salam',
+        date: '2 Pm',
+      }
+
+      var conversation = [
+        {
+          name: 'niloofar'
+        },
+        {
+          name: 'sima'
+        },
+        {
+          name: 'hooman'
+        }
+      ]
+
+      console.log('1+2 = ', '5' + 1 + 1 + '2')
+      console.log('+++', 'hello' + ' zahra')
+      console.log('2*2 = ', '2' * '2')
+
+      var result = sumation(2, 3)
+      document.getElementById('demo').innerHTML = result      
+      
+      function sumation(var1, var2) {
+        var sum = var1 + var2
+
+        return sum
+      }
+
+      var test = function(var1) {
+        console.log('test', var1)
+      }
+
+      test(555)
+
+      function changeText () {
+        document.getElementById('demo').innerHTML = 'change'
+      }
+
+      name = 'Im zahra'
+      console.log('str method', name[0])
+      console.log('str method', name.length)
+      console.log('str method', name.indexOf('zahra'), name.lastIndexOf('a'))
+      console.log(name.search('zahra'))
     </script>
-
   </body>
 </html>
