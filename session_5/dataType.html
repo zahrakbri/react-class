@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+
+    <h2>JavaScript</h2>
+    <p id="demo" >this is a p</p>
+    <p id="demo2" >...</p>
+    <input id='input1' onkeyup='concatText(value)' />
+    <button onclick="deleteItem()">OK</button>
+
+
+    <script>
+      function concatText(value) {
+        console.log('value:', value)
+        var value = document.getElementById('input1').value
+        value = value.trim()
+        var greeting = 'Hello'
+
+        document.getElementById('demo2').innerHTML = greeting.concat(' ', value, '!')
+      }
+
+      var num = 5.656
+      var str = num.toString()
+      console.log('convert:', str + num)
+      console.log('convert:', Number('6'))
+      var test = '3.15'
+      console.log('convert:', parseInt(test))
+      console.log('fixed:', num.toFixed(0)*1 )
+
+      
+
+      var message = {
+        sender: 'zahra',
+        date: '2',
+        profile: 'http://',
+        text: 'salam'
+      }
+
+      console.log('obj', message.text)
+
+      var date = new Date()
+      var value = document.getElementById('demo').innerHTML = date.getTime()
+
+      var arr = ['Reza', 'Afsoon', 'Fatemeh', 'Kasra']
+      console.log('arrr::: ', arr[0], arr[1], arr.length, arr[arr.length - 1])
+      console.log('type::', typeof arr)
+      arr[5] = 'Niloofar'
+      console.log('arr:::', arr)
+
+      function pushItem () {
+        var item = document.getElementById('input1').value
+        var result = arr.push(item)
+        console.log('push::', arr, result)
+      }
+
+      function popItem () {
+        var result = arr.pop()
+        console.log('push::', arr, result)
+      }
+
+      function unshiftItem () {
+        var item = document.getElementById('input1').value
+        var result = arr.unshift(item)
+        console.log('push::', arr, result)
+      }
+
+      function shiftItem () {
+        var result = arr.shift()
+        console.log('push::', arr, result)
+      }
+
+      function deleteItem () {
+        delete arr[2]
+        console.log('push::', arr)
+      }
+    </script>
+  </body>
+</html>
