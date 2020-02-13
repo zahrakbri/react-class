@@ -8,18 +8,25 @@
     <h2>JavaScript</h2>
     <p id="demo" >this is a p</p>
     <p id="demo2" >...</p>
-    <input id='input1' onkeyup='concatText(value)' />
-    <button onclick="deleteItem()">OK</button>
+    <input id='input1' onkeyup='concatText(event)' />
+    <button onclick="concatArray()">OK</button>
 
 
     <script>
-      function concatText(value) {
-        console.log('value:', value)
-        var value = document.getElementById('input1').value
-        value = value.trim()
-        var greeting = 'Hello'
+      function concatText(event) {
+        console.log('event:', event, event.key === 'Enter')
 
-        document.getElementById('demo2').innerHTML = greeting.concat(' ', value, '!')
+        if (event.key === 'Enter') {
+          var value = event.target.value
+          value = value.trim()
+          var greeting = 'Hello'
+
+          document.getElementById('demo2').innerHTML = greeting.concat(' ', value, '!')
+        } else if (event.key === 'Shift') {
+          document.getElementById('demo2').innerHTML = 'press enter'
+        } else {
+          document.getElementById('demo2').innerHTML = event.key
+        }
       }
 
       var num = 5.656
@@ -33,13 +40,38 @@
       
 
       var message = {
-        sender: 'zahra',
+        name: 'zahra',
+        family: 'kabiri',
         date: '2',
         profile: 'http://',
-        text: 'salam'
+        'text': 'salam',
+        'latest-message': 'salam',
+        unseenMessages: {
+          1: 0,
+          5: 3,
+          myData: function () {
+            console.log('this in unseen:::', this, this['1'])
+          }
+        },
+        fullname: function () {
+          console.log('this::', this)
+          return this.name + ' ' + this.family
+        },
+        arrowFunc: () => {
+          console.log('this::', this)
+        }
       }
 
-      console.log('obj', message.text)
+      message.receiver = 'sima'
+
+      console.log('obj',
+        message.text, message['text'],
+        message['latest-message'],
+        message.unseenMessages['5'],
+        message.fullname(),
+        message.unseenMessages.myData(),
+        message.arrowFunc(),
+        )
 
       var date = new Date()
       var value = document.getElementById('demo').innerHTML = date.getTime()
@@ -75,6 +107,18 @@
       function deleteItem () {
         delete arr[2]
         console.log('push::', arr)
+      }
+
+      function spl(){
+        arr.splice(2, 1)
+        console.log(arr)
+      }
+
+      function concatArray () {
+        var newArr = ['Farnoosh', 'Amin']
+        arr = arr.concat(newArr)
+        console.log(arr)
+
       }
     </script>
   </body>
