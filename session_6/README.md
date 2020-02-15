@@ -24,7 +24,7 @@
 
 ## Exercises
 
-### Ex. 4.1
+### Ex. 2.1
 
 **Problem Def.**
 
