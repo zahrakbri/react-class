@@ -1,72 +1,215 @@
 <!DOCTYPE html>
 <html>
-  <body>
+  <body onload="">
 
     <h2>JavaScript </h2>
-    <button onclick = 'comparison3()' > click me 1 </button>
-    <input id='age' >
-    <p id="demo"></p>
+    <button onclick = 'verify()' > click me</button>
+    <input id='input1' type='number' >
+    <div id='demo'></div>
 
     <script>
-      function comparison () {
-        var age = Number(document.getElementById('age').value)
-        // if (age >= 18) {
-        //   document.getElementById('demo').innerHTML = 'you can vote'
-        //} else {
-        //  document.getElementById('demo').innerHTML = 'you are a child'
-        //}
-        age >= 18
-          ? document.getElementById('demo').innerHTML = 'you can vote'
-          : document.getElementById('demo').innerHTML = 'you are a child'
-        // age >= 18 ? true : false
+      function verify() {
+        var score = Number(document.getElementById('input1').value)
+        var result
+
+        // if (score >= 10) {
+        //   result = 'congrats'
+        // } else {
+        //   result = 'fail'
+        // }
+
+        // result = score >= 10 ? score > 15 ? 'good job' : 'congrats' : 'fail'
+        result = score >= 10 ? 'congrats' : 'fail'
+        document.getElementById('demo').innerHTML = result
       }
 
-      function comparison2 () {
-        var date = new Date()
-        console.log(date.getHours())
-
-        if (date.getHours() < 12) {
-          document.getElementById('demo').innerHTML = 'Good morning'
-        } else if (date.getHours() < 18) {
-          document.getElementById('demo').innerHTML = 'Good evening'
-        } else {
-          document.getElementById('demo').innerHTML = 'Good night'
-        }
-      }
+      // console.log('scope::', result)
       
-      function comparison3 () {
-        var day = new Date().getDay()
-        console.log(day)
-        switch (day) {
+      function dailyMessage () {
+        var date = new Date().getDay()
+        
+        var message
+        // if (date === 0) {
+        //   message = '1shanbe'
+        // } else if (date === 1) {
+        //   message = '2shanbe'
+        // } else if (date === 2) {
+        //   message = '3shanbe'
+        // }else if (date === 3) {
+        //   message = '4shanbe'
+        // }else if (date === 4) {
+        //   message = '5shanbe'
+        // }else if (date === 5) {
+        //   message = 'jome'
+        // }else {
+        //   message = 'shanbe'
+        // }
+
+        switch(date) {
           case 0:
-            document.getElementById('demo').innerHTML = 'sunday'
-            console.log(0)
-            break
+            message = '1shanbe'
+            console.log(0, date)
+            break;
+
           case 1:
-            document.getElementById('demo').innerHTML = 'monday'
-            console.log(1)
-            break
+            message = '2shanbe'
+            console.log(1, date)
+            break;
+
           case 2:
-            document.getElementById('demo').innerHTML = '3shanbe'
-            console.log(2)
-            break
+            message = '3shanbe'
+            console.log(2, date)
+            break;
+
           case 3:
-            document.getElementById('demo').innerHTML = '4shanbe'
-            console.log(3)
-            break
           case 4:
-            document.getElementById('demo').innerHTML = '5shanbe'
-            console.log(4)
-            break
+            message = '5shanbe'
+            console.log(4, date)
+            break;
+
           case 5:
-            document.getElementById('demo').innerHTML = 'jome'
-            console.log(5)
-            break
+            message = 'jome'
+            console.log(5, date)
+            break;
+
           default:
-            document.getElementById('demo').innerHTML = 'fcgvhbnj'
-            console.log(6)
+            message = 'shanbe'
+            console.log(6, date)
+
+        }
+
+        document.getElementById('demo').innerHTML = message
+      }
+
+      // var i
+      // var count = 0
+      // for(i = 0; i < 5; i++) {
+      //   count += i
+      // }
+      // document.getElementById('demo').innerHTML = count
+
+
+      var conversationList = [
+        {
+          name: 'Sima',
+          latestMessage: 'bgh'
+        },
+        {
+          name: 'sharareh',
+          latestMessage: 'salam'
+        },
+        {
+          name: 'Reyhane',
+          latestMessage: 'hi'
+        },
+        {
+          name: 'Kasra',
+          latestMessage: 'salam'
+        },
+        {
+          name: 'Reza',
+          latestMessage: 'salam'
+        }
+      ]
+      var content = ''
+      // var i
+      // for(i = 0; i < conversation.length; i++) {
+      //   content +=
+      //     `<div style='border: 1px solid green'>
+      //       <p>
+      //         ${conversation[i].name}
+      //       </p>
+      //       <span style='color: green'>
+      //         ${conversation[i].latestMessage}
+      //       </span>
+      //     </div>`
+      // }
+
+      conversationList.map((conversation) => {
+        content += `<div style='border: 1px solid green'>
+            <p>
+              ${conversation.name}
+            </p>
+            <span style='color: green'>
+              ${conversation.latestMessage}
+            </span>
+          </div>`
+      })
+      document.getElementById('demo').innerHTML = content
+
+      var x = 10
+      {
+        x = 15
+      }
+
+      let y = 10
+      {
+        let y = 15
+        console.log('yyy::', y)
+      }
+
+      const baseUrl = 'www.click.com'
+
+      const arr = [1, 2, 3]
+      arr.push(4)
+      console.log('xxx::', x, y, arr)
+
+      let hello = (param1) => {
+        console.log(`hello ${param1}`)
+      }
+
+      
+
+      hello('Reza')
+
+
+      let message1 = {
+        name: 'Fatemeh',
+        latestMessage: 'salam'
+      }
+      let message2 = {
+        date: 5,
+        profile_url: 'http://...',
+        unseen: null
+      }
+
+      console.log('objj:::', Object.keys(message2), Object.values(message2))
+      Object.keys(message2).map((item) => {
+        console.log('itemm::', item)
+        message1[item] = message2[item]
+      })
+
+      console.log('message1::', message1)
+      
+      class Car {
+        constructor(brand, model) {
+          this.brand = brand
+          this.model = model
+        }
+
+        print() {
+          console.log('this', this, '**********')
+          return `I have a +++++++ ${this.brand}`
         }
       }
+
+      class pride extends Car {
+        constructor(brand, model, deathTime) {
+          super(brand, model)
+          this.deathTime = deathTime
+          console.log('class::', this)
+        }
+
+        print() {
+          return super.print()
+          console.log('im here')
+        }
+      }
+
+
+      let machine = new pride('pride', 'Hback', 'asap')
+      console.log('car:::', machine.print())
+
     </script>
 
   </body>
