@@ -19,7 +19,7 @@
 | 3 | Introduction to CSS | [Link](https://github.com/zahrakbri/react-class/blob/Session-3/) |
 | 4 | Introduction to Flexbox | [Link](https://github.com/zahrakbri/react-class/blob/Session-4/) |
 | 5 | Introduction to JS | [Link](https://github.com/zahrakbri/react-class/blob/Session-5/) |
-| 6 | Introduction to JS | [Link](https://github.com/zahrakbri/react-class/blob/Session-6/) |
+| 6 | Introduction to ReactJS | [Link](https://github.com/zahrakbri/react-class/blob/Session-6/) |
 
 ## Submit Homeworks Guideline
 
